@@ -1,4 +1,4 @@
-document. getElementById("header").innerHTML=  `  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+document. getElementById("header").innerHTML=  `<nav class="navbar navbar-expand-sm navbar-light bg-light">
 <div class="container">
   <a class="navbar-brand" href="index.html"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/120px-F1.svg.png" alt="">
   </a>
