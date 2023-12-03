@@ -21,7 +21,7 @@
         <div id="app" class="container">
             <h1>Pilotos</h1>
             <br>
-            <a name="" id="" class="btn btn-primary" href="./piloto_nuevo.html" role="button">Nuevo</a>
+            <a name="" id="" class="btn btn-dark" href="./piloto_nuevo.html" role="button">Nuevo</a>
             <br><br>
             <div v-if="error">
                 <p> Lo sentimos, se produjo un error lo esperamos mas tarde!</p>
@@ -59,11 +59,11 @@
                                 <td>{{piloto.escuderia}}</td>
                                 <td>{{piloto.nacionalidad}}</td>
                                 <td>
-                                    <img width="80":src="piloto.imagen" :alt="piloto.nombre">
+                                    <img width="100":src="piloto.imagen" :alt="piloto.nombre">
 
                                 </td>
                                 <td>
-                                    <a name="" id="" class="btn btn-primary" :href="'piloto_update.html?id='+ piloto.id"  role="button"> Editar</a>
+                                    <a name="" id="" class="btn btn-secondary" :href="'piloto_update.html?id='+ piloto.id"  role="button"> Editar</a>
                                     <button type="button" class="btn btn-danger" v-on:click="eliminar(piloto.id)">Eliminar</button>
                                 </td>
                                 </tr>

@@ -16,7 +16,7 @@
         </header>
         <main>
             <div class="container" id="app">
-                <form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
+                <form style="background-color: rgb(243, 241, 241);margin:10px auto ; width: 400px; padding: 20px;">
                     <h2>Editar Piloto </h2>
                     <div class="mb-3">
                         <label for="id">Id</label>
@@ -47,10 +47,11 @@
                         <br>
                         <input type="text" name="imagen" id="imagen" v-model="imagen">
                         <br>
+                        <br>
                         <img width="100"   :src="imagen" alt="">
 
                     </div>
-                    <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
+                    <button type="button" class="btn btn-outline-dark" v-on:click="modificar()">Grabar</button>
                 </form>
             </div>
         </main>
