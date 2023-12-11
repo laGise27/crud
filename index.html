@@ -18,6 +18,7 @@
 
     </header>
     <main>
+    
         <div id="app" class="container">
             <h1>Pilotos</h1>
             <br>
@@ -34,13 +35,13 @@
 
 
                 </section>
-            <section v-else>
+                <section v-else>
 
 
-                <div class="table-responsive">
-                    <table class="table table-light">
-                        <thead>
-                            <tr>
+                    <div class="table-responsive">
+                        <table class="table table-light">
+                            <thead>
+                                <tr>
                                     <th scope="col">ID</th>
                                     <th scope="col">Nombre del piloto</th>
                                     <th scope="col">Edad</th>
@@ -49,37 +50,40 @@
                                     <th scope="col">Imagen</th>
                                     <th scope="col">Acciones</th>
 
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="" v-for="piloto in pilotos">
-                                <td scope="row">{{piloto.id}}</td>
-                                <td>{{piloto.nombre}}</td>
-                                <td>{{piloto.edad}}</td>
-                                <td>{{piloto.escuderia}}</td>
-                                <td>{{piloto.nacionalidad}}</td>
-                                <td>
-                                    <img width="100":src="piloto.imagen" :alt="piloto.nombre" >
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="" v-for="piloto in pilotos">
+                                    <td scope="row">{{piloto.id}}</td>
+                                    <td>{{piloto.nombre}}</td>
+                                    <td>{{piloto.edad}}</td>
+                                    <td>{{piloto.escuderia}}</td>
+                                    <td>{{piloto.nacionalidad}}</td>
+                                    <td>
+                                        <img width="100" :src="piloto.imagen" :alt="piloto.nombre">
 
-                                </td>
-                                <td>
-                                    <a name="" id="" class="btn btn-secondary" :href="'piloto_update.html?id='+ piloto.id"  role="button"> Editar</a>
-                                    <button type="button" class="btn btn-danger" v-on:click="eliminar(piloto.id)">Eliminar</button>
-                                </td>
+                                    </td>
+                                    <td>
+                                        <a name="" id="" class="btn btn-secondary"
+                                            :href="'piloto_update.html?id='+ piloto.id" role="button"> Editar</a>
+                                        <button type="button" class="btn btn-danger"
+                                            v-on:click="eliminar(piloto.id)">Eliminar</button>
+                                    </td>
                                 </tr>
 
-                        </tbody>
-                    </table>
-                </div>
-            </section>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
             </div>
 
         </div>
 
+
     </main>
     <footer>
 
-    
+
 
     </footer>
     <!-- Bootstrap JavaScript Libraries -->

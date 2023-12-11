@@ -16,7 +16,6 @@ document. getElementById("header").innerHTML=  `<nav class="navbar navbar-expand
               <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CRUD</a>
               <div class="dropdown-menu" aria-labelledby="dropdownId">
                   <a class="dropdown-item" href="index.html">Pilotos</a>
-                  <a class="dropdown-item" href="noticias.html">Circuitos</a>
               </div>
           </li>
       </ul>
